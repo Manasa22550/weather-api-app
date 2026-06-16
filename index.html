@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h2>🌤️ Weather Dashboard</h2>
+        
+        <!-- Input Search Section -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name... (e.g., Bengaluru)">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Dynamic Weather Output Card -->
+        <div id="weather-result" class="weather-card hidden">
+            <h3 id="location-name">City Name</h3>
+            <div class="weather-details">
+                <p class="temp-display"><span id="temperature">--</span>°C</p>
+                <p id="weather-desc" class="description">Condition</p>
+                <hr>
+                <p>💧 Humidity: <span id="humidity">--</span>%</p>
+                <p>💨 Wind Speed: <span id="wind-speed">--</span> m/s</p>
+            </div>
+        </div>
+
+        <!-- Error Message Display Area -->
+        <p id="error-message" class="error-msg hidden">⚠️ City not found. Please try again!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

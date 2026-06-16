@@ -1,0 +1,128 @@
+/* Reset default page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Core Dashboard Card Setup */
+.weather-container {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Search Box Container */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#city-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#city-input:focus {
+    border-color: #2a5298;
+}
+
+#search-btn {
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #1e3c72;
+}
+
+/* Dynamic Output Weather Card Details */
+.weather-card {
+    background: #f4f7fc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #e1e8f5;
+}
+
+#location-name {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.temp-display {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1e3c72;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 15px 0;
+}
+
+.weather-details p {
+    font-size: 15px;
+    color: #444;
+    margin: 8px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Error States */
+.error-msg {
+    color: #d9534f;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* Visibility Control Classes */
+.hidden {
+    display: none !important;
+}
